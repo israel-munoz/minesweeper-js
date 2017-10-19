@@ -1,0 +1,35 @@
+<!-- Minesweeper JS
+     v1.0.0
+     Israel Muñoz <israel.munoz.v@gmail.com>
+     https://github.com/israel-munoz/minesweeper-js
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Minesweeper</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="minesweeper.min.css"/>
+        <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    </head>
+    <body>
+        <canvas id="container" class="canvas"></canvas>
+        <button type="button" id="records-show" class="records-show">Records</button>
+        <div id="records" class="records">
+            <div class="records-panel">
+                <h2>Records</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button type="button" class="close" id="records-close">Close</button>
+            </div>
+        </div>
+        <script src="minesweeper.min.js"></script>
+    </body>
+</html>

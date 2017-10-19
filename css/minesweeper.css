@@ -1,0 +1,73 @@
+/*! Minesweeper JS - Stylesheet
+    v1.0.0
+    Israel Munoz <israel.munoz.v@gmail.com>
+    https://github.com/israel-munoz/minesweeper-js
+ */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 1em;
+}
+
+.canvas {
+    display: block;
+    border: solid 1px #000;
+    margin: 0 auto;
+}
+button {
+    background-color: transparent;
+    border: none;
+    color: #03d;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 1em auto;
+}
+button:active,
+button:focus {
+    color: #3865fa;
+    text-shadow: 0 0 .1em #8df;
+    outline: none;
+}
+.records {
+    background-color: rgba(255, 255, 255, .8);
+    display: none;
+    font-family: sans-serif;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.records.visible {
+    display: block;
+}
+.records h2 {
+    text-shadow: 0 0 .1em #fff;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+.records table {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: .75em;
+    box-shadow: 0 0 .5em #000;
+    margin: 0 auto;
+    width: 20em;
+}
+.records table th:first-child,
+.records table td:first-child {
+    padding-left: 3%;
+    text-align: left;
+    width: 80%;
+}
+.records table td:last-child {
+    text-align: right;
+    padding-right: 7%;
+}
