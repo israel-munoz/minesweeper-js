@@ -533,10 +533,10 @@
         }
     });
     showButton.addEventListener('click', function (e) {
-        document.querySelector('#records').classList.add('visible');
+        document.querySelector('#records').className = 'records visible';
     });
     closeButton.addEventListener('click', function (e) {
-        document.querySelector('#records').classList.remove('visible');
+        document.querySelector('#records').className = 'records';
     });
 
     canvas.setDefaults({
