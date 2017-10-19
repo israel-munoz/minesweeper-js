@@ -3,7 +3,7 @@ Minesweeper game in JavaScript
 
 The game is made completely in a canvas element.
 
-Demo: (http://cap-hermosillo.com/tests/minesweeper/)[http://cap-hermosillo.com/tests/minesweeper/]
+Demo: http://cap-hermosillo.com/tests/minesweeper/
 
 Requires support for canvas 2D.
 
