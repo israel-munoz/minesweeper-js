@@ -401,7 +401,7 @@
         time.start = Number(new Date());
         time.count = 0;
         time.clockInterval = setInterval(function () {
-            time.count += 1;
+            time.count = Math.floor((Number(new Date()) - time.start) / 1000);
         }, 1000);
         time.drawInterval = setInterval(function () {
             draw();
@@ -418,6 +418,8 @@
     }
 
     function start() {
+        clearInterval(time.clockInterval);
+        clearInterval(time.drawInterval);
         setMatrix();
         state = states.playing;
         startTimer();
