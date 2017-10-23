@@ -1,5 +1,5 @@
 /*! Minesweeper JS - Main script
-    v1.0.0
+    v1.0.2
     Israel Munoz <israel.munoz.v@gmail.com>
     https://github.com/israel-munoz/minesweeper-js
  */
@@ -488,7 +488,7 @@
     }
 
     function fillRecordsTable(data) {
-        var panel = document.querySelector('#records'),
+        var panel = document.querySelector('.records'),
             table = panel.querySelector('table > tbody'),
             i, j = data.length;
         if (j > 10) {
@@ -535,10 +535,10 @@
         }
     });
     showButton.addEventListener('click', function (e) {
-        document.querySelector('#records').className = 'records visible';
+        document.querySelector('.records').className = 'records visible';
     });
     closeButton.addEventListener('click', function (e) {
-        document.querySelector('#records').className = 'records';
+        document.querySelector('.records').className = 'records';
     });
 
     canvas.setDefaults({
